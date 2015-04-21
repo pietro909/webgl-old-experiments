@@ -1,0 +1,24 @@
+#posw-main {
+	width: 1280px;
+	height: 720px;
+	position: relative;
+	display: block;
+	width: 1024px;
+	height: 576px;
+	margin: auto;
+	background: transparent;
+}
+
+.ui-content {
+	background-image: -webkit-linear-gradient( rgb(255, 255, 255),rgb(216, 216, 216) );
+	background-image: -webkit-linear-gradient( rgb(255, 255, 255),rgb(216, 216, 216) );
+	background-image: -moz-linear-gradient( rgb(255, 255, 255),rgb(216, 216, 216) );
+	background-image: -ms-linear-gradient( rgb(255, 255, 255),rgb(216, 216, 216) );
+	background-image: -o-linear-gradient( rgb(255, 255, 255),rgb(216, 216, 216) );
+	background-image: linear-gradient( rgb(255, 255, 255),rgb(216, 216, 216) );
+}
+
+.ui-controlgroup {
+	text-align: center; 
+}
+

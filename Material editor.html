@@ -1,0 +1,104 @@
+
+<!-- saved from url=(0069)http://www.albertograndi.it/pietro/5_osgjs_material_editor/index.html -->
+<html slick-uniqueid="3"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+		
+		<style>
+			body {
+				background: -moz-radial-gradient(farthest-side, rgba(0,0,0,0) 90%, rgba(0,0,0,0.1) 150%) rgb(76,76,76);
+				background: -webkit-gradient(radial, center center, 500, center center, 1400, from(rgba(0,0,0,0)), to(rgba(0,0,0,0.2))) rgb(76,76,76);
+				overflow: hidden;
+				padding: 0;
+				margin: 0;
+				color: white;
+				font-family: Arial, Helvetica, sans-serif;
+			}
+
+			a:link {
+				text-decoration: none;
+				color: black;
+			}
+			a:visited {
+				text-decoration: none;
+				color: black;
+			}
+			a:active {
+				text-decoration: none;
+				color: black;
+			}
+			a:hover {
+				text-decoration: underline;
+				color: black;
+			}
+
+			#ViewContainer {
+				position: absolute;
+			}
+
+			#explanation {
+				overflow: auto;
+				position: absolute;
+				left: 70%;
+			}
+
+			#explanation:focus {
+				outline: none;
+			}
+
+			code {
+				font-size: 10px;
+			}
+
+			#loading {
+				position: absolute;
+				left: 10px;
+				height: 10px;
+			}
+
+		</style>
+		<title>Material editor</title>
+		
+		<script type="text/javascript" src="./Material editor_files/osg-debug.js"></script>
+		<script type="text/javascript" src="./Material editor_files/main.js"></script>
+		
+		<script type="text/javascript" src="./Material editor_files/nodeStateSetVisitor.js"></script>
+		<script type="text/javascript" src="./Material editor_files/print_data.js"></script>
+		<script type="text/javascript" src="./Material editor_files/on_selection.js"></script>
+		<script type="text/javascript" src="./Material editor_files/show_data.js"></script>
+	</head>
+
+	<body>
+
+		<div id="loading" style="display: block;">
+			Loading
+		</div>
+		<div id="ViewContainer">
+			<canvas id="3DView" width="1430" height="721" style="width: 1430px; height: 721px;"></canvas>
+		</div>
+		<div id="explanation" tabindex="0">
+			<h1>Material list</h1>
+			osgjs lab
+			<br>
+			<button id="exploreButton" onclick="exploreScene()">
+				Explore scene!
+			</button>
+			<h3 id="matlist">Objects</h3>
+			<label id="diffuse_texture">diffuse texture</label>
+			<p>
+				<code id="info">
+					var texture = new osg.TextureCubeMap();
+					texture.setImage('TEXTURE_CUBE_MAP_POSITIVE_X', osgDB.readImage('textures/posx.jpg'));
+					texture.setImage('TEXTURE_CUBE_MAP_NEGATIVE_X', osgDB.readImage('textures/negx.jpg'));
+
+					texture.setImage('TEXTURE_CUBE_MAP_POSITIVE_Y', osgDB.readImage('textures/posy.jpg'));
+					texture.setImage('TEXTURE_CUBE_MAP_NEGATIVE_Y', osgDB.readImage('textures/negy.jpg'));
+
+					texture.setImage('TEXTURE_CUBE_MAP_POSITIVE_Z', osgDB.readImage('textures/posz.jpg'));
+					texture.setImage('TEXTURE_CUBE_MAP_NEGATIVE_Z', osgDB.readImage('textures/negz.jpg'));
+
+					texture.setMinFilter('LINEAR_MIPMAP_LINEAR');
+				</code>
+			</p>
+		</div>
+	
+
+</body></html>

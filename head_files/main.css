@@ -1,0 +1,46 @@
+
+body {
+	background: #CCCCCC;	
+	height: 100%;
+}
+
+section {
+	background: #111111;
+	width: 80%;
+	margin: auto;
+	display: table;
+	height: 46em;	
+}
+
+.central_display {
+	position: relative;
+	display: inline-block;
+	background: #ffffff;
+	width: 50%;
+	height: 100%;
+}
+
+.icons-frame {
+	position: absolute;
+	z-index: 500;
+	margin: 2%;
+	height: auto;
+	float: left;
+	pointer-events: none;
+}
+
+.icons {
+	position: relative;
+	display: block;
+	margin-top: 7em;
+	pointer-events:auto;
+}
+
+.slides {
+	display: none;
+	height: 100%;
+}
+
+.img_slide {
+	width: 600px;
+}
