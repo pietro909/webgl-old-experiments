@@ -161,7 +161,7 @@
         <translate sid="location">-1.19209e-7 1.19209e-7 0.708441</translate>
         <rotate sid="rotationZ">0 0 1 0</rotate>
         <rotate sid="rotationY">0 1 0 0</rotate>
-        <rotate sid="rotationX">1 0 0 90</rotate>
+        <rotate sid="rotationX">1 0 0 0</rotate>
         <scale sid="scale">0.9143992 0.9143992 0.9143992</scale>
         <instance_geometry url="#Sphere-mesh">
           <bind_material>
@@ -175,7 +175,7 @@
         <translate sid="location">0 0 0.7084411</translate>
         <rotate sid="rotationZ">0 0 1 0</rotate>
         <rotate sid="rotationY">0 1 0 0</rotate>
-        <rotate sid="rotationX">1 0 0 90</rotate>
+        <rotate sid="rotationX">1 0 0 0</rotate>
         <scale sid="scale">1.237345 0.4290879 1</scale>
         <instance_geometry url="#Plane_001-mesh">
           <bind_material>
